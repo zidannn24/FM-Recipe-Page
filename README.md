@@ -17,8 +17,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -26,13 +24,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ![Desktop](./design/desktop-result.png)
 ![Mobile](./design/mobile-result.png)
 
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Here](https://your-solution-url.com)
-- Live Site URL: [Here](https://your-live-site-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-arLs8iyZZH)
+- Live Site URL: [Here](https://zidannn24.github.io/FM-Recipe-Page/)
 
 ## My process
 
@@ -41,8 +36,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ## Author
 
