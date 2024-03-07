@@ -1,161 +1,144 @@
-/* *{
-    border: 1px solid red;
-} */
-
-body{
-    font-family: 'Young Serif';
-    margin: 0;
+*{
     padding: 0;
-    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container{
+body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: white;
-    width: 55%;
-    margin: 30px auto;
-    border-radius: 14px;
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    width: 100%;
+    max-width: 35rem;
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin: 30px 0;
+    background-color: white;
     color: hsl(24, 5%, 18%);
-}
-
-.recipe-img img{
-    width: 100%;
     border-radius: 14px;
 }
 
-.recipe-desc{
-    margin: 10px 0;
+h1, h2{
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    font-family: 'Young Serif'
 }
 
-.recipe-desc h1{
-    font-size: 43px;
-    font-weight: 300;
+h2{
+    color: brown;
 }
 
-.recipe-desc p, .nutrition p{
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Outfit', sans-serif;
-    color: hsl(30, 10%, 34%);
-}
-
-.prep{
-    background-color: hsl(330, 100%, 98%);
-    padding: 10px 20px;
-    /* margin-top: 40px; */
-    border-radius: 10px;
-    font-family: 'Outfit', sans-serif;
-}
-
-.prep h3{
-    color: hsl(332, 51%, 32%);
-}
-
-.prep ul, .ingredients ul, .instructions ol{
+ul, ol{
+    padding-inline: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    color: hsl(30, 10%, 34%);
-    font-family: 'Outfit', sans-serif;
+    gap: 0.5rem;
+    font-size: 0.9rem;
 }
 
-.prep ul > li::marker{
-    color: hsl(332, 51%, 32%);
+section{
+    margin: 1.8rem;
 }
 
-.ingredients{
-    margin-top: 10px;
-    padding-bottom: 10px;
+section.img, section.desc, section.prep, section.border{
+    margin-bottom: 0;
+}
+
+section.border{
+    padding-bottom: 2rem;
     border-bottom: 1px solid #ddd;
 }
 
-.ingredients h2, .instructions h2, .nutrition h2{
-    color: hsl(14, 45%, 36%);
-    font-weight: 300;
-    font-size: 30px;
-}
-
-.ingredients ul > li::marker{
-    color: hsl(14, 45%, 36%);
-}
-
-.instructions{
-    margin-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.instructions ol > li::marker{
-    color: hsl(14, 45%, 36%);
-    font-weight: bold;
-}
-
-.nutrition{
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-
-.nutrition table{
-    border-collapse: collapse;
+section.img img{
     width: 100%;
-    font-family: 'Outfit', sans-serif;
+    border-radius: 10px;
 }
 
-.nutrition table td, th {
-    padding: 15px 30px;
-    text-align: left;
+section.desc h1{
+    font-size: 2rem;
 }
 
-.nutrition tr{
+section.desc p{
+    font-size: 0.8rem;
+}
+
+section.prep{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 10px;
+}
+
+section.prep p{
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+    font-size: 1.1rem;
+}
+
+section.nutrition p{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+section.nutrition table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+section.nutrition tr{
     border-bottom: 1px solid #ddd;
 }
 
-.nutrition tr:last-child{
+section.nutrition tr:last-child{
     border-bottom: none;
 }
 
-.nutrition table td{
-    color: hsl(14, 45%, 36%);
-    font-weight: 700;
+section.nutrition td, th{
+    padding: 0.8rem 1.8rem;
 }
 
-.nutrition table th{
+section.nutrition th{
     font-weight: 400;
+    text-align: left;
 }
 
-@media screen and (max-width: 375px){
-    .container{
-        margin: 0;
-        width: 100%;
+section.nutrition td{
+    font-weight: 900;
+    color: brown;
+}
+
+@media screen and (max-width: 30rem) {
+    main{
+        max-width: 100%;
+        margin-block: 0;
     }
 
     .content{
         width: 100%;
-        margin: 0;
-    }
-
-    .recipe-img img{
+        margin-block: 0;
         border-radius: 0;
     }
 
-    .recipe-desc h1{
-        font-size: 40px;
-        font-weight: 300;
+    section.img{
+        margin: 0;
     }
-
-    .recipe-desc, .prep, .ingredients, .instructions, .nutrition{
-        margin: 0 20px;
+    section.img img{
+        border-radius: 0;
     }
-
 }
