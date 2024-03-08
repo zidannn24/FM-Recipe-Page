@@ -16,7 +16,7 @@ body{
 main{
     width: 100%;
     max-width: 35rem;
-    margin-block: 3rem;
+    margin-block: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
